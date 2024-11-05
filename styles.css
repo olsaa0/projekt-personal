@@ -1,24 +1,29 @@
+/* Global Body Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('nikewapaper.jpg'); /* Replace with your image path */
-    background-size: cover;
+    text-align: center;
+    background-image: url('nikewapaper.jpg'); /* Zëvendëso me rrugën e imazhit të sfondit */
+    background-size: cover; /* Siguron që imazhi mbulon gjithë ekranin */
     background-position: center;
-    background-attachment: fixed;
-    color: #333; /* Ensure text is visible over background */
+    color: #fff; /* Përdor tekst të bardhë për kontrast me sfondin */
+    height: 100vh;
 }
 
+/* Header Styling */
 header {
-    background: rgba(51, 51, 51, 0.8); /* Semi-transparent header */
-    color: #fff;
-    padding: 10px 0;
+    background: rgba(51, 51, 51, 0.7); /* Transparent background për header-in */
+    color: white;
+    padding: 20px 0;
     text-align: center;
+    border-bottom: 2px solid #fff; /* Ndihmon për të ndarë header-in nga përmbajtja */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -26,64 +31,87 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
+    color: #fff;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
-    text-decoration: underline;
-    color: #ffcc00;
+nav ul li a:hover {
+    color: #ffcc00; /* Ngjyrë e verdhë kur kalon me maus */
 }
 
+/* Nike Image Styling */
+.nike-image-container {
+    display: flex;
+    justify-content: flex-start; /* Vendosja në majë të majtë */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.nike-image-container img {
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+/* Sections Styling */
 section {
-    padding: 20px;
-    margin: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    background-color: rgba(255, 255, 255, 0.8); /* Background me transparencë */
+    padding: 50px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 10px;
+    color: #333;
 }
 
-.costume {
-    margin: 10px 0;
-}
-
+/* Button Styling */
 .button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #4CAF50; /* Gjelbër */
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #45a049; /* Ngjyrë më e errët gjelbrë kur kalon me maus */
+    transform: translateY(-2px); /* Efekti i ngritjes kur kalon me maus */
 }
 
+/* Footer Styling */
 footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
+    position: relative;
 }
 
 footer a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
+/* Responsive Design */
 @media (max-width: 600px) {
     nav ul li {
         display: block;

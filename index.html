@@ -6,72 +6,129 @@
     <link rel="stylesheet" href="styles.css">
     <title>Welcome to the Shoe Store</title>
     <style>
+        /* Global Body Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #f4f4f4;
+            background-image: url('background.jpg'); /* Zëvendëso me rrugën e imazhit të sfondit */
+            background-size: cover; /* Siguron që imazhi mbulon gjithë ekranin */
+            background-position: center;
+            color: #fff; /* Përdor tekst të bardhë për kontrast me sfondin */
+            height: 100vh;
         }
-        header, section, footer {
-            padding: 20px;
-            margin: 10px 0;
+
+        /* Header Styling */
+        header {
+            background: rgba(51, 51, 51, 0.7); /* Transparent background për header-in */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #fff; /* Ndihmon për të ndarë header-in nga përmbajtja */
         }
+
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
+
         nav ul li {
             display: inline;
-            margin-right: 15px;
+            margin: 0 15px;
         }
+
         nav ul li a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
-        section {
-            background-color: #fff;
-            padding: 50px;
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Ngjyrë e verdhë kur kalon me maus */
+        }
+
+        /* Nike Image Styling */
+        .nike-image-container {
+            display: flex;
+            justify-content: flex-start; /* Vendosja në majë të majtë */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .nike-image-container img {
+            max-width: 150px;
             border-radius: 5px;
+        }
+
+        /* Sections Styling */
+        section {
+            background-color: rgba(255, 255, 255, 0.8); /* Background me transparencë */
+            padding: 50px;
             margin: 20px auto;
             width: 80%;
             max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
+
+        section h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Button Styling */
+        .button {
+            background-color: #4CAF50; /* Gjelbër */
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            margin: 10px 0;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Ngjyrë më e errët gjelbrë kur kalon me maus */
+            transform: translateY(-2px); /* Efekti i ngritjes kur kalon me maus */
+        }
+
+        /* Footer Styling */
         footer {
             background-color: #333;
             color: white;
-            padding: 10px;
+            padding: 15px;
+            text-align: center;
             position: relative;
         }
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
+
+        footer a {
+            color: #fff;
             text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 4px;
+            font-weight: bold;
         }
 
-        /* Nike Image Section Positioned Higher */
-        .nike-image-container {
-            display: flex;
-            justify-content: flex-start; /* Align to the left */
-            align-items: center;
-            margin: 0; /* Remove any margins pushing it down */
-            padding: 0; /* Remove padding to bring it up */
-            position: absolute; /* Position it relative to the page */
-            top: 0; /* Align to the very top of the page */
-            left: 20px; /* Add space from the left edge */
+        footer a:hover {
+            text-decoration: underline;
         }
-        .nike-image-container img {
-            max-width: 150px; /* Adjust the size of the image */
-            border-radius: 5px;
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                margin: 10px;
+            }
         }
     </style>
 </head>
@@ -88,13 +145,13 @@
         </nav>
     </header>
 
-    <!-- Nike Image Section Positioned at the Very Top-Left -->
+    <!-- Nike Image Section Positioned at the Top-Left -->
     <div class="nike-image-container">
-        <img src="nike.png" alt="Nike Logo"> <!-- Replace with your Nike image path -->
+        <img src="nike.png" alt="Nike Logo">
     </div>
 
     <section id="home">
-        <h2>Welcome to Our Store!</h2>
+        <h2>Welcome to Our Shoe Store</h2>
         <p>Find the perfect shoes for any occasion.</p>
     </section>
 
@@ -106,11 +163,10 @@
     </section>
 
     <footer>
-        <h2>Contact Us</h2>
-        <p>Email: info@shoestore.com</p>
-        <p>Phone: +123 456 7890</p>
+        <p>&copy; 2024 Shoe Store. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
 
 
