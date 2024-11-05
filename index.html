@@ -57,6 +57,22 @@
             cursor: pointer;
             border-radius: 4px;
         }
+
+        /* Nike Image Section Positioned Higher */
+        .nike-image-container {
+            display: flex;
+            justify-content: flex-start; /* Align to the left */
+            align-items: center;
+            margin: 0; /* Remove any margins pushing it down */
+            padding: 0; /* Remove padding to bring it up */
+            position: absolute; /* Position it relative to the page */
+            top: 0; /* Align to the very top of the page */
+            left: 20px; /* Add space from the left edge */
+        }
+        .nike-image-container img {
+            max-width: 150px; /* Adjust the size of the image */
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -71,6 +87,11 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Nike Image Section Positioned at the Very Top-Left -->
+    <div class="nike-image-container">
+        <img src="nike.png" alt="Nike Logo"> <!-- Replace with your Nike image path -->
+    </div>
 
     <section id="home">
         <h2>Welcome to Our Store!</h2>

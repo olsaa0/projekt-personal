@@ -2,11 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('nikewapaper.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333; /* Ensure text is visible over background */
 }
 
 header {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent header */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -25,18 +29,18 @@ nav ul li {
 nav a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease; /* Smooth color change on hover */
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: #ffcc00; /* Change color on hover */
+    color: #ffcc00;
 }
 
 section {
     padding: 20px;
     margin: 20px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8); /* Light background for readability */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -44,7 +48,6 @@ section {
 section h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
 }
 
 .costume {
@@ -62,7 +65,7 @@ section h2 {
 }
 
 .button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 footer {
@@ -81,14 +84,13 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     nav ul li {
-        display: block; /* Stack navigation items vertically */
+        display: block;
         margin: 10px 0;
     }
 
     section {
-        margin: 10px; /* Reduce margin on smaller screens */
+        margin: 10px;
     }
 }
