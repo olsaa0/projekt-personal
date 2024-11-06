@@ -57,7 +57,10 @@
             background-color: #333;
             color: white;
             padding: 10px;
-            position: relative;
+
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -78,17 +81,37 @@
         <p>Choose from our wide range of men's athletic and casual shoes, all designed for comfort, durability, and style.</p>
         
         <div class="product-gallery">
-            <img class="product-img" src="images/mens-shoes1.jpg" alt="Men's Shoe 1">
-            <img class="product-img" src="images/mens-shoes2.jpg" alt="Men's Shoe 2">
-            <img class="product-img" src="images/mens-shoes3.jpg" alt="Men's Shoe 3">
-            <img class="product-img" src="images/mens-shoes4.jpg" alt="Men's Shoe 4">
-            <img class="product-img" src="images/mens-shoes5.jpg" alt="Men's Shoe 5">
+            <img class="product-img" src="shoes 1.png" alt="Men's Shoe 1">
+            <img class="product-img" src="shoes 2.png" alt="Men's Shoe 2">
+            <img class="product-img" src="shoess 3.png" alt="Men's Shoe 3">
+            <img class="product-img" src="shoe4.png" alt="Men's Shoe 4">
+            <img class="product-img" src="shoe5.png" alt="Men's Shoe 5">
         </div>
     </section>
 
-    <footer>
-        <p>Contact Us: info@nikeshoestore.com | Phone: +123 456 7890</p>
-    </footer>
+    <!-- Product Info -->
+    <div class="product-info">
+        <p>Price: $50.00</p>
+        <button onclick="addToCart()">Shto në Shportë</button>
+    </div>
+
+    <!-- User Information Form -->
+    <div class="form-container">
+        <h3>Shkruaj të dhënat tuaja</h3>
+        <form id="userForm" onsubmit="return submitForm(event)">
+            <input type="text" id="firstName" placeholder="Emri" required><br>
+            <input type="text" id="lastName" placeholder="Mbiemri" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <button type="submit">Dërgo</button>
+        </form>
+    </div>
+
+    <div id="confirmationMessage" style="margin-top: 20px;"></div>
+</section>
+
+<footer>
+    <p>Contact Us: fatmirlutolli8@gmail.com | Phone: +383-443-203</p>
+</footer>
 </body>
 </html>
 

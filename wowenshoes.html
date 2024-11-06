@@ -56,15 +56,49 @@
             background-color: #333;
             color: white;
             padding: 10px;
-            position: relative;
+
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Women's Shoes</h1>
-        <nav>
-            <ul>
-                <li><a href="products.html">Back to Products</a></li>
-                <li><a hre
+    <section>
+        <h2>Explore our Women's Shoes Collection</h2>
+        <p>Choose from our wide range of men's athletic and casual shoes, all designed for comfort, durability, and style.</p>
+        
+        <div class="product-gallery">
+            <img class="product-img" src="women1.png" alt="Men's Shoe 1">
+            <img class="product-img" src="women 2.png" alt="Men's Shoe 2">
+            <img class="product-img" src="women3.png" alt="Men's Shoe 3">
+            <img class="product-img" src="women 4.png" alt="Men's Shoe 4">
+            <img class="product-img" src="women 5.png" alt="Men's Shoe 5">
+        </div>
+    </section>
 
+    <!-- Product Info -->
+    <div class="product-info">
+        <p>Price: $50.00</p>
+        <button onclick="addToCart()">Shto në Shportë</button>
+    </div>
+
+    <!-- User Information Form -->
+    <div class="form-container">
+        <h3>Shkruaj të dhënat tuaja</h3>
+        <form id="userForm" onsubmit="return submitForm(event)">
+            <input type="text" id="firstName" placeholder="Emri" required><br>
+            <input type="text" id="lastName" placeholder="Mbiemri" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <button type="submit">Dërgo</button>
+        </form>
+    </div>
+
+    <div id="confirmationMessage" style="margin-top: 20px;"></div>
+</section>
+
+<footer>
+    <p>Contact Us: fatmirlutolli8@gmail.com | Phone: +383-443-203</p>
+</footer>
+</body>
+</html>

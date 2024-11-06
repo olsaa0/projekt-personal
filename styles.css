@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-image: url('nikewapaper.jpg'); /* Zëvendëso me rrugën e imazhit të sfondit */
+    background-image: url('nike.jpg'); /* Zëvendëso me rrugën e imazhit të sfondit */
     background-size: cover; /* Siguron që imazhi mbulon gjithë ekranin */
     background-position: center;
     color: #fff; /* Përdor tekst të bardhë për kontrast me sfondin */

@@ -52,6 +52,29 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
+        .product-info {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .form-container input {
+            padding: 10px;
+            margin: 5px;
+            font-size: 1em;
+            width: 80%;
+            max-width: 300px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
         footer {
             background-color: #333;
             color: white;
@@ -67,12 +90,48 @@
             <ul>
                 <li><a href="products.html">Back to Products</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a hre f="contact.html ]  ">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
         <h2>Explore our Children's Shoes Collection</h2>
-        <p>Give your kids the best of comfort and style with our wide range of children’s shoes. Perfect for school, sports, and everyday wear.</
+        <p>Choose from our wide range of children's athletic and casual shoes, all designed for comfort, durability, and style.</p>
+        
+        <div class="product-gallery">
+            <img class="product-img" src="children 1.png" alt="Children's Shoe 1">
+            <img class="product-img" src="children 2.png" alt="Children's Shoe 2">
+            <img class="product-img" src="chuldren 3.png" alt="Children's Shoe 3">
+            <img class="product-img" src="children 4.png" alt="Children's Shoe 4">
+            <img class="product-img" src="children 5.png" alt="Children's Shoe 5">
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+            <p>Price: $50.00</p>
+            <button onclick="addToCart()">Shto në Shportë</button>
+        </div>
+
+        <!-- User Information Form -->
+        <div class="form-container">
+            <h3>Shkruaj të dhënat tuaja</h3>
+            <form id="userForm" onsubmit="return submitForm(event)">
+                <input type="text" id="firstName" placeholder="Emri" required><br>
+                <input type="text" id="lastName" placeholder="Mbiemri" required><br>
+                <input type="email" id="email" placeholder="Email" required><br>
+                <button type="submit">Dërgo</button>
+            </form>
+        </div>
+
+        <div id="confirmationMessage" style="margin-top: 20px;"></div>
+    </section>
+
+    <footer>
+        <p>Contact Us: fatmirlutolli8@gmail.com | Phone: +383-443-203</p>
+    </footer>
+
+   
+</body>
+</html>
 
